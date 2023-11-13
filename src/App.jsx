@@ -1,4 +1,4 @@
-import CoreConcepts from "./CoreConcepts";
+import Display from "./Display";
 import Header from "./Header";
 import reactConceptsImg from "./assets/components.png";
 function App() {
@@ -9,7 +9,7 @@ function App() {
         <section id="core-concepts">
           <h2>Time to get started!</h2>
           <ul>
-            <CoreConcepts
+            <Display
               img={reactConceptsImg}
               title="Time to get started"
               desc="Time to get started"
