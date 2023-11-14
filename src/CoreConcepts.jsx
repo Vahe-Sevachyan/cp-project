@@ -1,6 +1,4 @@
-import React from "react";
-
-const Display = (props) => {
+const CoreConcepts = (props) => {
   return (
     <>
       <li>
@@ -12,4 +10,4 @@ const Display = (props) => {
   );
 };
 
-export default Display;
+export default CoreConcepts;
