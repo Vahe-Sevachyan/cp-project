@@ -4,9 +4,10 @@ import Header from "./Header";
 import { CORE_CONCEPTS } from "./Data";
 import TabButton from "./TabButton";
 function App() {
-  function handleSelect() {
-    console.log("clicked button - selected");
+  function handleSelect(selectedButton) {
+    console.log(selectedButton);
   }
+
   return (
     <div>
       <Header />
@@ -29,10 +30,12 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={handleSelect}>Components</TabButton>
-            <TabButton onSelect={handleSelect}>JSX</TabButton>
-            <TabButton onSelect={handleSelect}>Props</TabButton>
-            <TabButton onSelect={handleSelect}>State</TabButton>
+            <TabButton onSelect={() => handleSelect("Components")}>
+              Components
+            </TabButton>
+            <TabButton onSelect={() => handleSelect("JSX")}>JSX</TabButton>
+            <TabButton onSelect={() => handleSelect("Props")}>Props</TabButton>
+            <TabButton onSelect={() => handleSelect("State")}>State</TabButton>
           </menu>
         </section>
       </main>
